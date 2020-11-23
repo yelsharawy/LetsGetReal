@@ -58,6 +58,7 @@ public class RationalNumber extends RealNumber  {
     /**
     *@return the value expressed as "3/4" or "8/3"
     */
+    @Override
     public String toString() {
         return denominator == 1 ? Integer.toString(numerator) :
                 numerator + "/" + denominator;

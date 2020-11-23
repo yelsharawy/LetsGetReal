@@ -62,14 +62,18 @@ public class RationalNumber extends RealNumber  {
     }
 
     /**Calculate the GCD of two integers.
-    *@param a the first integers
+    *@param a the first integer
     *@param b the second integer
     *@return the value of the GCD
     */
     private static int gcd(int a, int b) {
-        /*use euclids method or a better one*/
-        // http://sites.math.rutgers.edu/~greenfie/gs2004/euclid.html
-        return 0;
+        if (a < 0 ^ b < 0) return gcd(-a, b);  // cuz Java's % is not mod
+        while (b != 0) {
+            int oldB = b;
+            b = a % b;
+            a = oldB;
+        }
+        return a;
     }
 
     /**

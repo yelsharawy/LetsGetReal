@@ -38,15 +38,16 @@ public class RealNumber {
     public double getValue() {
         return value;
     }
-    
+
     public boolean equals(RealNumber other) {
         double thisValue = getValue();
         double otherValue = other.getValue();
         return Math.abs(thisValue - otherValue) <= 1e-3 * Math.abs(otherValue);
     }
 
+    @Override
     public String toString() {
-        return ""+value;
+        return ""+getValue();
     }
 
 }

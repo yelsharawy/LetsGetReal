@@ -42,7 +42,7 @@ public class RealNumber {
     public boolean equals(RealNumber other) {
         double thisValue = getValue();
         double otherValue = other.getValue();
-        return Math.abs(thisValue - otherValue) <= 1e-3 * Math.abs(otherValue);
+        return Math.abs(thisValue - otherValue) <= 1e-5 * Math.abs(otherValue);
     }
 
     @Override

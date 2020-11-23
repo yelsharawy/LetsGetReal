@@ -38,9 +38,11 @@ public class RealNumber {
     public double getValue() {
         return value;
     }
-
+    
     public boolean equals(RealNumber other) {
-        return true;
+        double thisValue = getValue();
+        double otherValue = other.getValue();
+        return Math.abs(thisValue - otherValue) <= 1e-3 * Math.abs(otherValue);
     }
 
     public String toString() {

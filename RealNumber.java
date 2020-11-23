@@ -10,30 +10,28 @@ public class RealNumber {
     *Return the sum of this and the other
     */
     public RealNumber add(RealNumber other) {
-        //other can be ANY RealNumber, including a RationalNumber
-        //or other subclasses of RealNumber (that aren't written yet)
-        return null;
+        return new RealNumber(getValue() + other.getValue());
     }
 
     /*
     *Return the product of this and the other
     */
     public RealNumber multiply(RealNumber other) {
-        return null;
+        return new RealNumber(getValue() * other.getValue());
     }
 
     /*
     *Return the this divided by the other
     */
     public RealNumber divide(RealNumber other) {
-        return null;
+        return new RealNumber(getValue() / other.getValue());
     }
 
     /*
     *Return the this minus the other
     */
     public RealNumber subtract(RealNumber other) {
-        return null;
+        return new RealNumber(getValue() - other.getValue());
     }
 
 

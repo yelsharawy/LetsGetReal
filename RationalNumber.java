@@ -70,7 +70,7 @@ public class RationalNumber extends RealNumber  {
     *@return the value of the GCD (with the same sign as <code>b</code>)
     */
     private static int gcd(int a, int b) {
-        if (a < 0 ^ b < 0) return gcd(-a, b);  // cuz Java's % is not mod
+        if (a < 0 ^ b < 0) a = -a;  // cuz Java's % is not mod
         while (b != 0) {
             int oldB = b;
             b = a % b;

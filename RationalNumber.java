@@ -67,7 +67,7 @@ public class RationalNumber extends RealNumber  {
     /**Calculate the GCD of two integers.
     *@param a the first integer
     *@param b the second integer
-    *@return the value of the GCD
+    *@return the value of the GCD (with the same sign as <code>b</code>)
     */
     private static int gcd(int a, int b) {
         if (a < 0 ^ b < 0) return gcd(-a, b);  // cuz Java's % is not mod

@@ -65,6 +65,9 @@ public class RationalNumber extends RealNumber  {
     }
 
     /**Calculate the GCD of two integers.
+    *For the sake of reducing fractions:
+    *When <code>a</code> is 0, the result is <code>b</code>.
+    *When <code>b</code> is 0, the result is <code>|a|</code>. (unused case)
     *@param a the first integer
     *@param b the second integer
     *@return the value of the GCD (with the same sign as <code>b</code>)

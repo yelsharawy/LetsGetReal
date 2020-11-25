@@ -39,12 +39,6 @@ public class RealNumber extends Number {
         return value;
     }
 
-    public boolean equals(RealNumber other) {
-        double thisValue = getValue();
-        double otherValue = other.getValue();
-        return Math.abs(thisValue - otherValue) <= 1e-5 * Math.abs(otherValue);
-    }
-
     @Override
     public String toString() {
         return ""+getValue();

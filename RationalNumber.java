@@ -20,7 +20,7 @@ public class RationalNumber extends Number  {
 
     @Override
     public double getValue() {
-        return (double)numerator/denominator;
+        return (double)getNumerator()/getDenominator();
     }
 
     /**

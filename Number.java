@@ -20,4 +20,5 @@ public abstract class Number {
         double otherValue = other.getValue();
         return Math.abs(thisValue - otherValue) <= 1e-5 * Math.abs(otherValue);
     }
+
 }

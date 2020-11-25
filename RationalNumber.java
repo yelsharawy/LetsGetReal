@@ -59,8 +59,10 @@ public class RationalNumber extends Number  {
     */
     @Override
     public String toString() {
-        return denominator == 1 ? Integer.toString(numerator) :
-                numerator + "/" + denominator;
+        int nume = getNumerator();
+        int deno = getDenominator();
+        return deno == 1 ? Integer.toString(nume) :
+                nume + "/" + deno;
     }
 
     /**Calculate the GCD of two integers.
